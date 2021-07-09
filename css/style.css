@@ -477,6 +477,8 @@ img {
 .navbar-menu__link {
   color: inherit;
   font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
   line-height: 18px;
 }
 
@@ -579,7 +581,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
