@@ -511,6 +511,8 @@ img {
   width: 350px;
   height: 100%;
   border: none;
+  font-size: 12px;
+  line-height: 15px;
   background-color: #F5FAFE;
   color: #333333;
 }
@@ -567,7 +569,7 @@ img {
 }
 
 .breadcrumb-list__item:not(:last-child) {
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 .breadcrumb-list__item:not(:last-child)::after {
@@ -588,7 +590,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 23px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 .hotel-info__text {
@@ -620,8 +622,6 @@ img {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: 8px;
-  margin-bottom: 6px;
 }
 
 .offer {
