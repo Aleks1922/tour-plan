@@ -567,7 +567,7 @@ img {
 }
 
 .breadcrumb-list__item:not(:last-child) {
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 .breadcrumb-list__item:not(:last-child)::after {
@@ -610,15 +610,18 @@ img {
 }
 
 .hotel-name {
+  display: block;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  margin-right: 23px;
+  margin-right: 14px;
 }
 
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  height: 8px;
+  margin-bottom: 6px;
 }
 
 .offer {
