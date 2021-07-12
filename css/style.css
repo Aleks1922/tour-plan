@@ -421,8 +421,9 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   color: #333333;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -548,6 +549,31 @@ img {
   font-weight: normal;
   line-height: 18px;
   margin-left: 18px;
+}
+
+.breadcrumb {
+  padding: 18px 0;
+}
+
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumb-list__item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: '/';
+}
+
+.breadcrumb-list__link {
+  color: #0A223D;
 }
 
 @media (max-width: 1200px) {

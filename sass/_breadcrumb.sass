@@ -1,0 +1,11 @@
+.breadcrumb
+  padding: 18px 0
+  &-list
+    display: flex
+    align-items: center
+    &__item:not(:last-child)
+      margin-right: 4px
+      &::after
+        content: '/'
+    &__link
+      color: #0A223D
