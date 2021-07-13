@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito+Sans:wght@400;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -78,7 +79,7 @@
       </ul>
     </div>
   </section>
-  <sectin class="hotel">
+  <section class="hotel">
     <div class="container">
       <div class="hotel-info">
         <div class="hotel-info__text">
@@ -98,10 +99,28 @@
           <span class="rating__counter">4.5/5</span>
         </div>
       </div>
-
+      <div class="hotel-grid">
+        <div class="slider">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/slider-image-2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slider-image-3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slider-image-4.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slider-image-5.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/slider-image.jpg" alt=""></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <button class="slider-button slider-button--prev"></button>
+            <button class="slider-button slider-button--next"></button>
+          </div>
+        </div>
+      </div>
     </div>
-  </sectin>
-
+  </section>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
