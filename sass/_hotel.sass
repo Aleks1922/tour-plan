@@ -19,6 +19,9 @@
     font-size: 24px
     line-height: 30px
     margin-right: 14px
+  &-grid
+    display: flex
+    justify-content: space-between
 .stars
   flex-basis: 100%
   &__item
@@ -86,3 +89,84 @@
       background-position: center
       right: 18px
       transform: rotate(180deg)
+.booking
+  font-family: 'Nunito+Sans', sans-serif
+  &__other
+    width: 100%
+    padding: 13px 0
+    background-color: $primary
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: #fff
+    border-radius: 4px
+  &__option
+    width: 350px
+    padding: 28px
+    margin-bottom: 27px
+    font-family: 'Nunito+Sans', sans-serif
+    background: #0A223D
+    color: #fff
+    border-radius: 8px
+  &__map
+    width: 100%
+    background-color: red
+    border-radius: 10px
+.price
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 9px
+  &__start
+    display: block
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    display: block
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    display: block
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__guests
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+    &--user
+      margin-right: 9px
+    &--quantity
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+  &__room
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &--home
+      margin-right: 9px
+    &--quantity
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+.call-center
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 17px
+  font-weight: 600
+  font-size: 18px
+  line-height: 25px
+  &__quick-dial
+
+  &__call-number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &--number
+      margin-left: 8px
+      color: #fff
