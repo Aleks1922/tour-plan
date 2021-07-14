@@ -729,7 +729,7 @@ img {
 }
 
 .booking {
-  font-family: 'Nunito+Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .booking__other {
@@ -756,7 +756,6 @@ img {
 .booking__map {
   width: 347px;
   height: 213px;
-  background-color: red;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -879,7 +878,7 @@ img {
   padding: 98px 0 87px 0;
   background: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   position: relative;
 }
@@ -1095,6 +1094,19 @@ img {
   .booking__map {
     width: 100%;
   }
+  .newsletter-container {
+    max-width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .newsletter__subscribe {
+    margin-top: 37px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1106,5 +1118,21 @@ img {
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .newsletter {
+    padding-top: 76px;
+    padding-bottom: 83px;
+  }
+  .newsletter-title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .newsletter__subscribe {
+    max-width: 100%;
   }
 }
