@@ -65,7 +65,7 @@
       </ul>
     </nav>
   </header>
-  <section class="breadcrumb">
+  <div class="breadcrumb">
     <div class="container">
       <ul class="breadcrumb-list">
         <li class="breadcrumb-list__item">
@@ -79,7 +79,7 @@
         </li>
       </ul>
     </div>
-  </section>
+  </div>
   <section class="hotel">
     <div class="container">
       <div class="hotel-info">
@@ -101,21 +101,24 @@
         </div>
       </div>
       <div class="hotel-grid">
-        <div class="slider hotel__slider">
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img class="swiper-slide__image" src="img/slider-image-2.jpg" alt=""></div>
-              <div class="swiper-slide"><img class="swiper-slide__image" src="img/slider-image-3.jpg" alt=""></div>
-              <div class="swiper-slide"><img class="swiper-slide__image" src="img/slider-image-4.jpg" alt=""></div>
-              <div class="swiper-slide"><img class="swiper-slide__image" src="img/slider-image-5.jpg" alt=""></div>
-              <div class="swiper-slide"><img class="swiper-slide__image" src="img/slider-image.jpg" alt=""></div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button--prev"></button>
-            <button class="slider-button slider-button--next"></button>
+        <div class="swiper-container hotel-slider hotel__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slider-image-2.jpg"
+                alt=""></div>
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slider-image-3.jpg"
+                alt=""></div>
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slider-image-4.jpg"
+                alt=""></div>
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slider-image-5.jpg"
+                alt=""></div>
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slider-image.jpg"
+                alt=""></div>
           </div>
+          <!-- If we need navigation buttons -->
+          <button class="hotel-slider__button hotel-slider__button--prev"></button>
+          <button class="hotel-slider__button hotel-slider__button--next"></button>
         </div>
         <div class="booking">
           <div class="booking__option">
@@ -168,6 +171,90 @@
     </div>
   </section>
   <!-- /.newsletter -->
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">What people think about us</h2>
+      <div class="swiper-container reviews-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/slider-avatar1.jpg" alt="slider-avatar1" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Megan Fox</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                </div>
+              </div>
+              <p class="reviews-slider__text">
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well.
+                Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles
+                were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was
+                also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but
+                self location in a narrow street is not good. Overall it was a good experience and could recommend.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar-2.jpg" alt="photo: avatar Marylin" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Marylin Cruz</h3>
+                <span class="reviews-slider__date">Stayed 23 Sep, 2018</span>
+                <div class="reviews-slider__rating">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                </div>
+              </div>
+              <p class="reviews-slider__text">
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well.
+                Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles
+                were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was
+                also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but
+                self location in a narrow street is not good. Overall it was a good experience and could recommend.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar-3.jpg" alt="photo: avatar Jack" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Jack Voznik</h3>
+                <span class="reviews-slider__date">Stayed 11 Dec, 2020</span>
+                <div class="reviews-slider__rating">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                  <img class="stars__item" src="img/Star.svg" alt="star">
+                </div>
+              </div>
+              <p class="reviews-slider__text">
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well.
+                Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles
+                were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was
+                also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but
+                self location in a narrow street is not good. Overall it was a good experience and could recommend.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <button class="reviews-slider__button reviews-slider__button--prev"></button>
+        <button class="reviews-slider__button reviews-slider__button--next"></button>
+      </div>
+    </div>
+    <!-- /.reviews-container -->
+  </section>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
