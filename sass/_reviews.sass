@@ -15,13 +15,31 @@
       margin-bottom: 30px
       margin-top: -45px
     &__item
-      width: 731px
+      position: relative
+      max-width: 731px
       align-items: center
       margin: 45px auto 0
       display: flex
       flex-direction: column
       align-items: center
       background-color: #fff
+      &::after
+        content: ''
+        background-image: url(../img/quote-left.svg)
+        position: absolute
+        width: 70px
+        height: 48px
+        top: 13px
+        left: 64px
+      &::before
+        content: ''
+        background-image: url(../img/quote-right.svg)
+        position: absolute
+        width: 70px
+        height: 48px
+        bottom: 114px
+        right: 60px
+
     &__avatar
       width: 90px
       height: 90px

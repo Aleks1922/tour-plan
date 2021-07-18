@@ -25,3 +25,11 @@ const reviewsSlider = new Swiper('.reviews-slider', {
   },
 
 });
+
+ymaps.ready(init);
+function init() {
+  var apiMaps = new ymaps.Map("api-maps", {
+    center: [25.07, 55.13],
+    zoom: 13
+  });
+}
