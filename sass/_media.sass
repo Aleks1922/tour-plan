@@ -23,14 +23,16 @@
     &-top
       padding: 30px 0
     &__search
-      margin-left: auto
-      &__input
-        width: 340px
+      margin-left: 47px
     &-menu
       padding: 22px 0
+      justify-content: space-around
       &__link
         font-size: 12px
         line-height: 15px
+  .search
+    &__input
+      width: 340px
   .hotel
     &-grid
       flex-direction: column
@@ -40,22 +42,41 @@
       width: 100%
   .booking
     display: flex
-    align-items: center
     justify-content: space-between
     &__option
       width: 340px
       margin-bottom: 0
     &__map
       width: 340px
+      height: 210px
+  .newsletter
+    margin-top: 60px
+    padding: 92px 0 93px 0
+    &-container
+      max-width: 700px
   .reviews
+    padding: 40px 0 60px 0
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
     &-slider
+      &__text
+        padding: 0 60px 30px 64px
       &__item
         max-width: 580px
+      &__button--prev
+        left: 0
+        transform: translateY(-50%)
+      &__button--next
+        transform: translateY(-50%)
+        right: 0
   .activities
     &-wrapper
       flex-wrap: wrap
   .card-item
-    flex: 0 1 339px
+    flex: 0 1 340px
+    height: 255px
 
 @media (max-width: 767px)
   .container
@@ -85,7 +106,7 @@
     margin-left: auto
   .hotel
     &-info
-      padding: 5px 0 20px 0
+      padding: 5px 0 21px 0
     &-name
       flex-basis: 100%
       margin-top: 10px
@@ -94,16 +115,11 @@
       height: 350px
   .booking
     flex-direction: column
-    min-height: 450px
+    min-height: 401px
     &__option
       width: 100%
     &__map
       width: 100%
-  .newsletter
-    &-container
-      max-width: 90%
-      flex-direction: column
-      align-items: start
     &__subscribe
       margin-top: 37px
   .reviews
@@ -113,8 +129,6 @@
         max-width: 580px
         &::before, &::after
           display: none
-      &__text
-        padding: 0 60px 30px 64px
       &__button
         top: 45px
         transform: translateY(-50%)
@@ -138,21 +152,41 @@
     flex: 1 1 339px
 
 @media (max-width: 576px)
+  .container
+    max-width: 280px
+  .navbar-top
+    padding: 26px 0 30px 0px
   .logo
     width: 99px
   .hotel
     &__slider
+      margin-top: 16px
       margin-bottom: 20px
     &-slider
-      height: 250px
+      height: 179px
+  .booking
+    &__option
+      padding: 29px 22px 26px 23px
+    &__map
+      height: 173px
+  .price
+    &__person
+      margin-top: 5px
   .newsletter
+    margin-top: 42px
     padding-top: 76px
     padding-bottom: 83px
+    &-container
+      max-width: 280px
+      flex-direction: column
+      align-items: start
     &-title
       font-weight: 300
       font-size: 20px
       line-height: 25px
+      margin-bottom: 37px
       &__strong
+        margin-top: 5px
         font-size: 30px
         line-height: 38px
     &__subscribe
@@ -162,14 +196,15 @@
       &__item
         max-width: 580px
       &__text
-        padding: 0 29px 36px 33px
+        text-align: left
+        padding: 0 29px 33px 33px
       &__button
         top: 45px
         transform: translateY(-50%)
         &--prev
-          left: 20%
+          left: 30%
         &--next
-          right: 20%
+          right: 30%
     &__title
       font-size: 18px
       line-height: 23px
