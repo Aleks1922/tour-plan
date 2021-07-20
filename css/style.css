@@ -687,8 +687,13 @@ img {
 }
 
 .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-bottom: 8px;
+  margin-right: 15px;
 }
 
 .offer {
@@ -711,7 +716,7 @@ img {
 
 .rating {
   min-width: 65px;
-  min-height: 45px;
+  height: 45px;
   text-align: center;
 }
 
@@ -750,7 +755,7 @@ img {
 
 .booking__option {
   width: 350px;
-  padding: 29px 22px 26px 23px;
+  padding: 29px 29px 26px 26px;
   margin-bottom: 27px;
   font-family: 'Nunito', sans-serif;
   background: #0A223D;
@@ -773,6 +778,10 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 9px;
+}
+
+.price__person {
+  margin-top: 4px;
 }
 
 .price__start {
@@ -810,11 +819,11 @@ img {
   margin-bottom: 8px;
 }
 
-.price__guests--user {
+.price--user {
   margin-right: 9px;
 }
 
-.price__guests--quantity {
+.price--quantity {
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
@@ -996,6 +1005,7 @@ img {
           flex-direction: column;
   align-items: center;
   background-color: #fff;
+  padding: 0 96px 30px 98px;
 }
 
 .reviews-slider__item::after {
@@ -1055,10 +1065,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
 }
 
 .reviews-slider__text {
-  padding: 0 96px 30px 99px;
+  max-height: 115px;
+  overflow: auto;
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
@@ -1134,7 +1146,7 @@ img {
           align-items: start;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   position: relative;
   border-radius: 6px;
   overflow: hidden;
@@ -1160,6 +1172,8 @@ img {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 18px;
+  max-height: 70%;
+  overflow: hidden;
 }
 
 .card-item__button {
@@ -1385,6 +1399,7 @@ img {
   .booking__option {
     width: 340px;
     margin-bottom: 0;
+    padding: 29px 22px 26px 23px;
   }
   .booking__map {
     width: 340px;
@@ -1405,11 +1420,12 @@ img {
     line-height: 38px;
     margin-bottom: 50px;
   }
-  .reviews-slider__text {
-    padding: 0 60px 30px 64px;
-  }
   .reviews-slider__item {
     max-width: 580px;
+    padding: 0 60px 30px 64px;
+  }
+  .reviews-slider__text {
+    max-height: 135px;
   }
   .reviews-slider__button--prev {
     left: 0;
@@ -1493,7 +1509,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 401px;
+    min-height: 450px;
   }
   .booking__option {
     width: 100%;
@@ -1503,6 +1519,10 @@ img {
   }
   .booking__subscribe {
     margin-top: 37px;
+  }
+  .newsletter-container {
+    max-width: 576px;
+    width: 92%;
   }
   .reviews {
     padding-bottom: 50px;
@@ -1562,14 +1582,14 @@ img {
   .hotel-slider {
     height: 179px;
   }
+  .booking {
+    min-height: 401px;
+  }
   .booking__option {
     padding: 29px 22px 26px 23px;
   }
   .booking__map {
     height: 173px;
-  }
-  .price__person {
-    margin-top: 5px;
   }
   .newsletter {
     margin-top: 42px;
@@ -1602,10 +1622,11 @@ img {
   }
   .reviews-slider__item {
     max-width: 580px;
+    padding: 0 29px 33px 33px;
   }
   .reviews-slider__text {
     text-align: left;
-    padding: 0 29px 33px 33px;
+    max-height: 268px;
   }
   .reviews-slider__button {
     top: 45px;
@@ -1613,10 +1634,10 @@ img {
             transform: translateY(-50%);
   }
   .reviews-slider__button--prev {
-    left: 30%;
+    left: 33px;
   }
   .reviews-slider__button--next {
-    right: 30%;
+    right: 36px;
   }
   .reviews__title {
     font-size: 18px;

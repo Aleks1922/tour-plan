@@ -64,7 +64,10 @@
 .swiper-container.hotel-slider
   margin-left: 0
 .stars
+  display: flex
   flex-basis: 100%
+  margin-bottom: 8px
+  margin-right: 15px
   &__item
 .offer
   padding: 3px 9px 4px 9px
@@ -81,7 +84,7 @@
   line-height: 15px
 .rating
   min-width: 65px
-  min-height: 45px
+  height: 45px
   text-align: center
   &__user
     display: block
@@ -108,7 +111,7 @@
     border-radius: 4px
   &__option
     width: 350px
-    padding: 29px 22px 26px 23px
+    padding: 29px 29px 26px 26px
     margin-bottom: 27px
     font-family: 'Nunito', sans-serif
     background: #0A223D
@@ -123,6 +126,8 @@
   display: flex
   justify-content: space-between
   margin-bottom: 9px
+  &__person
+    margin-top: 4px
   &__start
     display: block
     font-weight: normal
@@ -144,12 +149,12 @@
     align-items: center
     justify-content: space-between
     margin-bottom: 8px
-    &--user
-      margin-right: 9px
-    &--quantity
-      font-weight: normal
-      font-size: 12px
-      line-height: 16px
+  &--user
+    margin-right: 9px
+  &--quantity
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
   &__room
     display: flex
     align-items: center

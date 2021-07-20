@@ -23,6 +23,7 @@
       flex-direction: column
       align-items: center
       background-color: #fff
+      padding: 0 96px 30px 98px
       &::after
         content: ''
         background-image: url(../img/quote-left.svg)
@@ -64,8 +65,10 @@
       display: flex
       justify-content: center
       align-items: center
+      margin: 0
     &__text
-      padding: 0 96px 30px 99px
+      max-height: 115px
+      overflow: auto
       font-weight: normal
       font-size: 12px
       line-height: 160%
