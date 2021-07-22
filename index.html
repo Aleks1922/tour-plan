@@ -15,19 +15,19 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/header-logo-vertical.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile_hidden">
           <img src="img/avatar-nathan.jpg" alt="avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -41,6 +41,20 @@
     </div>
     <nav class="navbar-bottom">
       <ul class="navbar-menu container">
+        <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+          <a href="#" class="user navbar__user navbar__user--mobile_visible">
+            <img src="img/avatar-nathan.jpg" alt="avatar: Nathan" class="user__avatar">
+            <span class="user__name">Nathan</span>
+          </a>
+        </li>
+        <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+          <form action="#" class="search navbar__search navbar__search--mobile_visible">
+            <input type="text" class="search__input" placeholder="Search Location">
+            <button class="search__button">
+              <img src="img/search.svg" alt="Icon: search">
+            </button>
+          </form>
+        </li>
         <li class="navbar-menu__item">
           <a class="navbar-menu__link" href="">All Deals</a>
         </li>
@@ -329,9 +343,9 @@
             </div>
           </div>
           /.packages-cards__info -->
-        </div>
-      </div>
-    </div>
+  </div>
+  </div>
+  </div>
   </section>
   <!-- /.packages -->
   <footer class="footer">
