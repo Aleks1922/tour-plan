@@ -431,10 +431,6 @@ body {
   margin: auto;
 }
 
-img {
-  max-width: 100%;
-}
-
 .navbar {
   background-color: #fff;
 }
@@ -493,6 +489,10 @@ img {
 
 .logo {
   width: 177px;
+}
+
+.logo__image {
+  max-width: 100%;
 }
 
 .search {
@@ -666,24 +666,21 @@ img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: transparent;
+  background-size: 10px;
 }
 
 .hotel-slider__button--prev {
   background-image: url(../img/arrow-prev.svg);
   background-repeat: no-repeat;
-  background-size: 10px;
   background-position: center;
   left: 18px;
 }
 
 .hotel-slider__button--next {
-  background-image: url(../img/arrow-prev.svg);
+  background-image: url(../img/arrow-next.svg);
   background-repeat: no-repeat;
-  background-size: 10px;
   background-position: center;
   right: 18px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .swiper-container.hotel-slider {
@@ -1204,7 +1201,7 @@ img {
 .footer {
   background-color: #0A223D;
   color: #BDBDBD;
-  padding-top: 106px;
+  padding-top: 108px;
   padding-bottom: 46px;
 }
 
@@ -1725,6 +1722,15 @@ img {
   }
   .hotel-slider {
     height: 350px;
+  }
+  .hotel-slider__button {
+    background-size: 4px;
+  }
+  .hotel-slider__button--prev {
+    left: -2px;
+  }
+  .hotel-slider__button--next {
+    right: -2px;
   }
   .booking {
     -webkit-box-orient: vertical;
