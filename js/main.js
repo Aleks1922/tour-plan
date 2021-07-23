@@ -37,4 +37,5 @@ function init() {
 let menuButton = document.querySelector('.menu-button');
 menuButton.addEventListener('click', function () {
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible')
+  document.body.classList.toggle('lock')
 })

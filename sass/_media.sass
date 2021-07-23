@@ -83,7 +83,7 @@
   .footer
     padding-top: 73px
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
+      grid-template: repeat(5, minmax(56px, max-content)) / repeat(6, 1fr)
       grid-row-gap: 39px
       grid-column-gap: 30px
     &__logo
@@ -113,10 +113,28 @@
       max-width: 540px
       margin-top: 5px
       grid-column: 1 / 6
+    &__bottom
+      grid-row: 5/6
+      grid-column: 1/4
+      align-self: center
+      justify-self: start
+    &__payment
+      grid-row: 5/6
+      grid-column: 5/7
+      align-self: center
+      justify-self: end
     &__logo
       height: 120px
+    &__icon-wrapper
+      margin-left: 8px
+      margin-right: 20px
   .vertical
     max-width: 97px
+  .bottom
+    &__item
+      &:nth-of-type(1)
+        margin-left: 0
+
 @media (max-width: 767px)
   body
     padding-top: 72px
@@ -156,6 +174,7 @@
       right: 0
       bottom: 0
       top: 72px
+      overflow: auto
       &--visible
         display: block
     &__mobile
@@ -363,11 +382,25 @@
       grid-column: 2 span
       order: 10
       margin-top: 0
+    &__bottom
+      grid-row: 8
+      grid-column: 1
+    &__payment
+      margin-top: -21px
+      grid-row: 9
+      grid-column: 1
+      justify-self: start
     &__info
       justify-self: start
     &__logo
       height: 120px
     &__title--m34
       margin-bottom: 14px
+    &__icon-wrapper
+      margin-left: 4px
+      margin-right: 8px
   .logo__vertical
-    max-width: 97px
+    max-width: 95px
+  .bottom
+    &__item
+      margin: 0 4px
