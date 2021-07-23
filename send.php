@@ -30,13 +30,13 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'besttourplanmerinov@yandex.ru'; // Логин на почте
-    $mail->Password   = 'QWErty123'; // Пароль на почте
+    $mail->Password   = 'lslazvfqcpyfsodh'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('besttourplanmerinov@yandex.ru', 'Aleksey Merinov'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('kinderlolpingui@yndex.ru');
+    $mail->addAddress('kinderLOLpingui@yandex.ru');
 
 // Отправка сообщения
 $mail->isHTML(true);
