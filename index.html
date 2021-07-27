@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
@@ -111,7 +111,7 @@
         </div>
         <div class="rating hotel-info__rating">
           <span class="rating__user">User Ratting</span>
-          <span class="rating__counter">4.5/<span class="rating__counter--best">5</span></span>
+          <span class="rating__counter">4.5/<span class="rating__counter rating__counter--best">5</span></span>
         </div>
       </div>
       <div class="hotel-grid">
@@ -144,20 +144,20 @@
               </div>
               <div class="price__person">
                 <div class="price__guests">
-                  <img src="img/user.svg" alt="icon: user" class="price--user">
-                  <span class="price--quantity">2 x Guests</span>
+                  <img src="img/user.svg" alt="icon: user" class="price__icon">
+                  <span class="price__quantity">2 x Guests</span>
                 </div>
                 <div class="price__room">
-                  <img src="img/home.svg" alt="icon: home" class="price__room--home">
-                  <span class="price__room--quantity">1 x Room</span>
+                  <img src="img/home.svg" alt="icon: home" class="price__icon">
+                  <span class="price__quantity">1 x Room</span>
                 </div>
               </div>
             </div>
             <div class="call-center">
               <span class="call-center__quick-dial">Quick Booking</span>
-              <div class="call-center__call-number">
-                <img src="img/phone.svg" alt="icon: phone" class="call-center__call-number--phone">
-                <a href="tel:+12100" class="call-center__call-number--number">12100</a>
+              <div class="call-center__phone">
+                <img src="img/phone.svg" alt="icon: phone">
+                <a href="tel:+12100" class="call-center__number">12100</a>
               </div>
 
             </div>
@@ -176,9 +176,9 @@
         subscribe to our
         <span class="newsletter-title__strong">newsletter</span>
       </h2>
-      <form action="#" class="subscribe newsletter__subscribe">
-        <input type="email" class="subscribe__input" placeholder="Your email addres">
-        <button class="subscribe__button">Send</button>
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <input type="email" class="subscribe__input" placeholder="Your email addres" name="email">
+        <button class="subscribe__button" type="submit">Send</button>
       </form>
     </div>
   </section>
@@ -310,7 +310,7 @@
         <div class="packages-cards__item packages-cards__item--big">
           <img src="img/packages-1.jpg" alt="photo: Hotel Blue Haven" class="packages-cards__image">
           <div class="packages-cards__info">
-            <div class="packages-cards__stars">
+            <div class="stars packages-cards__stars">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
@@ -322,22 +322,24 @@
               laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis
               epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea
               ullamco do</p>
-            <div class="packages-cards__option">
-              <img src="img/map-pin.svg" alt="map-pin" class="packages-cards__icon">
-              <span>1749 Wheeler Ridge Delaware</span>
-            </div>
-            <div class="packages-cards__option">
-              <img src="img/user.svg" alt="icon: user" class="packages-cards__icon">
-              <span>2 x Guests</span>
-            </div>
-            <div class="packages-cards__option">
-              <img src="img/home.svg" alt="icon: home" class="packages-cards__icon">
-              <span>1 x Room</span>
+            <div class="packages-cards__options">
+              <div class="packages-cards__options-item">
+                <img src="img/map-pin.svg" alt="map-pin" class="packages-cards__icon">
+                <span>1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="packages-cards__options-item">
+                <img src="img/user.svg" alt="icon: user" class="packages-cards__icon">
+                <span>2 x Guests</span>
+              </div>
+              <div class="packages-cards__options-item">
+                <img src="img/home.svg" alt="icon: home" class="packages-cards__icon">
+                <span>1 x Room</span>
+              </div>
             </div>
             <div class="packages-cards__price">
               <div class="packages-cards__sell">
-                <span class="packages-cards__price--old">$ 10,500</span>
-                <span class="packages-cards__price--new">$ 8,500</span>
+                <span class="packages-cards__price-old">$ 10,500</span>
+                <span class="packages-cards__price-new">$ 8,500</span>
               </div>
               <button class="packages-cards__button">Book Now</button>
             </div>
@@ -345,35 +347,38 @@
         </div>
         <div class="packages-cards__item packages-cards__item--little">
           <img src="img/packages-2.jpg" alt="photo: LUX* Belle Mare" class="packages-cards__image">
-          <div class="packages-cards__info">
-            <div class="packages-cards__stars">
+          <div class="packages-cards__info packages-cards__info--little">
+            <div class="stars packages-cards__stars packages-cards__stars--little">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
             </div>
-            <h3 class="packages-cards__title">LUX* Belle Mare</h3>
-            <p class="packages-cards__text">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim
+            <h3 class="packages-cards__title packages-cards__title--little">LUX* Belle Mare</h3>
+            <p class="packages-cards__text packages-cards__text--little">Aute quis duis excepteur excepteur ipsum cat
+              eiusmod consectetur enim
               laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis
               epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea
               ullamco do</p>
-            <div class="packages-cards__option">
-              <img src="img/map-pin.svg" alt="map-pin" class="packages-cards__icon">
-              <span>1749 Wheeler Ridge Delaware</span>
-            </div>
-            <div class="packages-cards__option">
-              <img src="img/user.svg" alt="icon: user" class="packages-cards__icon">
-              <span>2 x Guests</span>
-            </div>
-            <div class="packages-cards__option">
-              <img src="img/home.svg" alt="icon: home" class="packages-cards__icon">
-              <span>1 x Room</span>
+            <div class="packages-cards__options packages-cards__options--little">
+              <div class="packages-cards__options-item">
+                <img src="img/map-pin.svg" alt="map-pin" class="packages-cards__icon">
+                <span>1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="packages-cards__options-item">
+                <img src="img/user.svg" alt="icon: user" class="packages-cards__icon">
+                <span>2 x Guests</span>
+              </div>
+              <div class="packages-cards__options-item">
+                <img src="img/home.svg" alt="icon: home" class="packages-cards__icon">
+                <span>1 x Room</span>
+              </div>
             </div>
             <div class="packages-cards__price">
               <div class="packages-cards__sell">
-                <span class="packages-cards__price--old">$ 8,500</span>
-                <span class="packages-cards__price--new">$ 3,000</span>
+                <span class="packages-cards__price-old">$ 8,500</span>
+                <span class="packages-cards__price-new">$ 3,000</span>
               </div>
               <button class="packages-cards__button">Book Now</button>
             </div>
@@ -381,35 +386,38 @@
         </div>
         <div class="packages-cards__item packages-cards__item--little">
           <img src="img/packages-3.jpg" alt="photo: White Palace" class="packages-cards__image">
-          <div class="packages-cards__info">
-            <div class="packages-cards__stars">
+          <div class="packages-cards__info packages-cards__info--little">
+            <div class="stars packages-cards__stars packages-cards__stars--little">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
             </div>
-            <h3 class="packages-cards__title">White Palace</h3>
-            <p class="packages-cards__text">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim
+            <h3 class="packages-cards__title packages-cards__title--little">White Palace</h3>
+            <p class="packages-cards__text packages-cards__text--little">Aute quis duis excepteur excepteur ipsum cat
+              eiusmod consectetur enim
               laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis
               epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea
               ullamco do</p>
-            <div class="packages-cards__option">
-              <img src="img/map-pin.svg" alt="map-pin" class="packages-cards__icon">
-              <span>1749 Wheeler Ridge Delaware</span>
-            </div>
-            <div class="packages-cards__option">
-              <img src="img/user.svg" alt="icon: user" class="packages-cards__icon">
-              <span>2 x Guests</span>
-            </div>
-            <div class="packages-cards__option">
-              <img src="img/home.svg" alt="icon: home" class="packages-cards__icon">
-              <span>1 x Room</span>
+            <div class="packages-cards__options packages-cards__options--little">
+              <div class="packages-cards__options-item">
+                <img src="img/map-pin.svg" alt="map-pin" class="packages-cards__icon">
+                <span>1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="packages-cards__options-item">
+                <img src="img/user.svg" alt="icon: user" class="packages-cards__icon">
+                <span>2 x Guests</span>
+              </div>
+              <div class="packages-cards__options-item">
+                <img src="img/home.svg" alt="icon: home" class="packages-cards__icon">
+                <span>1 x Room</span>
+              </div>
             </div>
             <div class="packages-cards__price">
               <div class="packages-cards__sell">
-                <span class="packages-cards__price--old">$ 10,500</span>
-                <span class="packages-cards__price--new">$ 9,000</span>
+                <span class="packages-cards__price-old">$ 10,500</span>
+                <span class="packages-cards__price-new">$ 9,000</span>
               </div>
               <button class="packages-cards__button">Book Now</button>
             </div>
@@ -417,35 +425,38 @@
         </div>
         <div class="packages-cards__item packages-cards__item--little">
           <img src="img/packages-4.jpg" alt="photo: Luxury Place" class="packages-cards__image">
-          <div class="packages-cards__info">
-            <div class="packages-cards__stars">
+          <div class="packages-cards__info packages-cards__info--little">
+            <div class="stars packages-cards__stars packages-cards__stars--little">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
             </div>
-            <h3 class="packages-cards__title">Luxury Place</h3>
-            <p class="packages-cards__text">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim
+            <h3 class="packages-cards__title packages-cards__title--little">Luxury Place</h3>
+            <p class="packages-cards__text packages-cards__text--little">Aute quis duis excepteur excepteur ipsum cat
+              eiusmod consectetur enim
               laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis
               epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea
               ullamco do</p>
-            <div class="packages-cards__option">
-              <img src="img/map-pin.svg" alt="map-pin" class="packages-cards__icon">
-              <span>1749 Wheeler Ridge Delaware</span>
-            </div>
-            <div class="packages-cards__option">
-              <img src="img/user.svg" alt="icon: user" class="packages-cards__icon">
-              <span>2 x Guests</span>
-            </div>
-            <div class="packages-cards__option">
-              <img src="img/home.svg" alt="icon: home" class="packages-cards__icon">
-              <span>1 x Room</span>
+            <div class="packages-cards__options packages-cards__options--little">
+              <div class="packages-cards__options-item">
+                <img src="img/map-pin.svg" alt="map-pin" class="packages-cards__icon">
+                <span>1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="packages-cards__options-item">
+                <img src="img/user.svg" alt="icon: user" class="packages-cards__icon">
+                <span>2 x Guests</span>
+              </div>
+              <div class="packages-cards__options-item">
+                <img src="img/home.svg" alt="icon: home" class="packages-cards__icon">
+                <span>1 x Room</span>
+              </div>
             </div>
             <div class="packages-cards__price">
               <div class="packages-cards__sell">
-                <span class="packages-cards__price--old">$ 4,500</span>
-                <span class="packages-cards__price--new">$ 2,500</span>
+                <span class="packages-cards__price-old">$ 4,500</span>
+                <span class="packages-cards__price-new">$ 2,500</span>
               </div>
               <button class="packages-cards__button">Book Now</button>
             </div>
@@ -453,35 +464,38 @@
         </div>
         <div class="packages-cards__item packages-cards__item--little">
           <img src="img/packages-5.jpg" alt="photo: Hotel Five Star" class="packages-cards__image">
-          <div class="packages-cards__info">
-            <div class="packages-cards__stars">
+          <div class="packages-cards__info packages-cards__info--little">
+            <div class="stars packages-cards__stars packages-cards__stars--little">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
               <img class="stars__item" src="img/Star.svg" alt="star">
             </div>
-            <h3 class="packages-cards__title">Hotel Five Star</h3>
-            <p class="packages-cards__text">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim
+            <h3 class="packages-cards__title packages-cards__title--little">Hotel Five Star</h3>
+            <p class="packages-cards__text packages-cards__text--little">Aute quis duis excepteur excepteur ipsum cat
+              eiusmod consectetur enim
               laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis
               epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea
               ullamco do</p>
-            <div class="packages-cards__option">
-              <img src="img/map-pin.svg" alt="map-pin" class="packages-cards__icon">
-              <span>1749 Wheeler Ridge Delaware</span>
-            </div>
-            <div class="packages-cards__option">
-              <img src="img/user.svg" alt="icon: user" class="packages-cards__icon">
-              <span>2 x Guests</span>
-            </div>
-            <div class="packages-cards__option">
-              <img src="img/home.svg" alt="icon: home" class="packages-cards__icon">
-              <span>1 x Room</span>
+            <div class="packages-cards__options packages-cards__options--little">
+              <div class="packages-cards__options-item">
+                <img src="img/map-pin.svg" alt="map-pin" class="packages-cards__icon">
+                <span>1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="packages-cards__options-item">
+                <img src="img/user.svg" alt="icon: user" class="packages-cards__icon">
+                <span>2 x Guests</span>
+              </div>
+              <div class="packages-cards__options-item">
+                <img src="img/home.svg" alt="icon: home" class="packages-cards__icon">
+                <span>1 x Room</span>
+              </div>
             </div>
             <div class="packages-cards__price">
               <div class="packages-cards__sell">
-                <span class="packages-cards__price--old">$ 6,500</span>
-                <span class="packages-cards__price--new">$ 3,500</span>
+                <span class="packages-cards__price-old">$ 6,500</span>
+                <span class="packages-cards__price-new">$ 3,500</span>
               </div>
               <button class="packages-cards__button">Book Now</button>
             </div>
@@ -495,7 +509,7 @@
     <div class="container">
       <div class="footer-wrapper">
         <div class="footer__logo">
-          <img src="img/footer-logo.svg" alt="logo: best tour plan" class="logo__vertical">
+          <img src="img/footer-logo.svg" alt="logo: best tour plan">
         </div>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -554,13 +568,13 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--m0">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link" href#="">
+            <a href="#" class="footer__link">
               <img src="img/fb.svg" alt="icon: facebook">
             </a>
-            <a href="#" class="footer__link" href#="">
+            <a href="#" class="footer__link">
               <img src="img/yt.svg" alt="icon: youtube">
             </a>
-            <a href="#" class="footer__link" href#="">
+            <a href="#" class="footer__link">
               <img src="img/inst.svg" alt="icon: instargam">
             </a>
           </div>
@@ -625,7 +639,7 @@
           <li class="bottom__item"><a href="#" class="bottom__link">Cancellation policy</a></li>
         </ul>
         <div class="footer__payment">
-          <img src="img/payment.png" alt="payment methods" class="payment__methods">
+          <img src="img/payment.png" alt="payment methods">
         </div>
       </div>
     </div>
