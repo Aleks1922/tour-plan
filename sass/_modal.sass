@@ -1,0 +1,56 @@
+.modal
+  &__overlay
+    background-color: rgba(0, 143, 223, 0.39)
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    width: 478px
+    padding: 33px 88px
+    position: fixed
+    top: 50%
+    left: 50%
+    background-color: $dark
+    color: #fff
+    border-radius: 8px
+    transform: translate(-50%, -50%)
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__title
+    text-align: center
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    margin-bottom: 15px
+  &__input
+    width: 100%
+    margin-bottom: 15px
+  &__message
+    width: 100%
+    margin-bottom: 15px
+  &__info
+    display: inline-block
+    text-align: right
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+  &__close
+    position: absolute
+    top: 17px
+    right: 18px
