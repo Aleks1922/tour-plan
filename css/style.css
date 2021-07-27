@@ -1999,6 +1999,29 @@ img {
         grid-template: repeat(3, 500px)/repeat(2, 1fr);
     gap: 20px;
   }
+  .modal__dialog {
+    width: 90vw;
+    padding: 18px 66px;
+  }
+  .modal__form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal__input--mobile {
+    width: 49%;
+  }
+  .modal__message {
+    min-height: 100px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2230,9 +2253,18 @@ img {
   .packages-cards__options {
     margin-bottom: 24px;
   }
+  .packages-cards__wrapper--big {
+    height: 50%;
+  }
+  .modal__dialog {
+    padding: 15px 44px;
+  }
+  .modal__message {
+    min-height: 66px;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 567px) {
   .container {
     max-width: 280px;
   }
@@ -2521,5 +2553,18 @@ img {
   }
   .packages-cards__wrapper--big {
     height: 40%;
+  }
+  .modal__dialog {
+    padding: 12px 22px;
+  }
+  .modal__message {
+    min-height: 80px;
+  }
+  .modal__input {
+    width: 100%;
+  }
+  .modal__button {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }

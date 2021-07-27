@@ -90,11 +90,15 @@ $(document).ready(function () {
     document.body.classList.remove('lock');
   }
 
-  function ESCclose(evt) {
-    if (evt.keyCode == 27) {
-      //window.close();
-      console.log('close the window...')
+  $(document).keydown('keydown', function (e) {
+    // ESCAPE key pressed
+    if (e.keyCode === 27) {
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+      document.body.classList.remove('lock');
     }
-  }
+  });
 
 });

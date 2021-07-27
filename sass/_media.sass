@@ -145,6 +145,22 @@
       grid-template: repeat(3, 500px) / repeat(2, 1fr)
       gap: 20px
 
+  .modal
+    &__dialog
+      width: 90vw
+      padding: 18px 66px
+    &__form
+      &-wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+    &__input
+      &--mobile
+        width: 49%
+    &__message
+      min-height: 100px
+
 @media (max-width: 767px)
   body
     padding-top: 72px
@@ -301,8 +317,16 @@
         margin-bottom: 23px
       &__options
         margin-bottom: 24px
+      &__wrapper
+        &--big
+          height: 50%
+  .modal
+    &__dialog
+      padding: 15px 44px
+    &__message
+      min-height: 66px
 
-@media (max-width: 576px)
+@media (max-width: 567px)
   .container
     max-width: 280px
   .navbar-top
@@ -474,3 +498,13 @@
         height: 40%
         &--big
           height: 40%
+  .modal
+    &__dialog
+      padding: 12px 22px
+    &__message
+      min-height: 80px
+    &__input
+      width: 100%
+    &__button
+      width: 100%
+      margin-bottom: 15px

@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 
-<body onkeydown="ESCclose(event)">
+<body>
   <header class="navbar navbar--fixed">
     <div class="container">
       <div class="navbar-top">
@@ -282,7 +282,7 @@
         <div class="card-item">
           <img src="img/card-image-1.jpg" alt="The curious corner of chamarel" class="card-item__image">
           <h3 class="card-item__title">The curious corner <br> of chamarel</h3>
-          <button class="button card-item__button">Book Now</button>
+          <button data-toggle="modal" class="button card-item__button">Book Now</button>
         </div>
         <div class="card-item">
           <img src="img/card-image-2.jpg" alt="Gymkhana club golf course" class="card-item__image">
@@ -292,12 +292,12 @@
         <div class="card-item">
           <img src="img/card-image-3.jpg" alt="Tamarind falls hiking trip - full day" class="card-item__image">
           <h3 class="card-item__title">Tamarind falls hiking <br>trip - full day</h3>
-          <button class="button card-item__button">Book Now</button>
+          <button data-toggle="modal" class="button card-item__button">Book Now</button>
         </div>
         <div class="card-item">
           <img src="img/card-image-4.jpg" alt="The blue marine discovery quest" class="card-item__image">
           <h3 class="card-item__title">The blue marine discovery<br> quest</h3>
-          <button class="button card-item__button">Book Now</button>
+          <button data-toggle="modal" class="button card-item__button">Book Now</button>
         </div>
       </div>
     </div>
@@ -343,7 +343,7 @@
                 <span class="packages-cards__price-old">$ 10,500</span>
                 <span class="packages-cards__price-new">$ 8,500</span>
               </div>
-              <button class="packages-cards__button">Book Now</button>
+              <button data-toggle="modal" class="packages-cards__button">Book Now</button>
             </div>
           </div>
         </div>
@@ -384,7 +384,7 @@
                 <span class="packages-cards__price-old">$ 8,500</span>
                 <span class="packages-cards__price-new">$ 3,000</span>
               </div>
-              <button class="packages-cards__button">Book Now</button>
+              <button data-toggle="modal" class="packages-cards__button">Book Now</button>
             </div>
           </div>
         </div>
@@ -425,7 +425,7 @@
                 <span class="packages-cards__price-old">$ 10,500</span>
                 <span class="packages-cards__price-new">$ 9,000</span>
               </div>
-              <button class="packages-cards__button">Book Now</button>
+              <button data-toggle="modal" class="packages-cards__button">Book Now</button>
             </div>
           </div>
         </div>
@@ -466,7 +466,7 @@
                 <span class="packages-cards__price-old">$ 4,500</span>
                 <span class="packages-cards__price-new">$ 2,500</span>
               </div>
-              <button class="packages-cards__button">Book Now</button>
+              <button data-toggle="modal" class="packages-cards__button">Book Now</button>
             </div>
           </div>
         </div>
@@ -507,7 +507,7 @@
                 <span class="packages-cards__price-old">$ 6,500</span>
                 <span class="packages-cards__price-new">$ 3,500</span>
               </div>
-              <button class="packages-cards__button">Book Now</button>
+              <button data-toggle="modal" class="packages-cards__button">Book Now</button>
             </div>
           </div>
         </div>
@@ -663,8 +663,8 @@
       <h3 class="modal__title">Booking</h3>
       <form action="send.php" method="POST" class="modal__form-wrapper">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone">
-        <input type="email" class="input modal__input" placeholder="Email*" name="email">
+        <input type="tel" class="input modal__input modal__input--mobile" placeholder="Phone Number*" name="phone">
+        <input type="email" class="input modal__input modal__input--mobile" placeholder="Email*" name="email">
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
         <span class="modal__info">* Required Fields</span>
