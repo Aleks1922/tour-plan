@@ -135,6 +135,16 @@
       &:nth-of-type(1)
         margin-left: 0
 
+  .packages
+    &-title
+      margin-bottom: 50px
+      font-size: 30px
+      line-height: 38px
+    &-cards
+      display: grid
+      grid-template: repeat(3, 500px) / repeat(2, 1fr)
+      gap: 20px
+
 @media (max-width: 767px)
   body
     padding-top: 72px
@@ -178,11 +188,11 @@
       &--visible
         display: block
     &--fixed
-        position: fixed
-        left: 0
-        right: 0
-        top: 0
-        z-index: 99
+      position: fixed
+      left: 0
+      right: 0
+      top: 0
+      z-index: 99
   .user
     &__name
       margin-left: 0
@@ -264,6 +274,33 @@
     flex: 1 1 339px
     &:nth-of-type(2)
       margin-bottom: 8px
+
+  .packages
+    &-title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 35px
+    &-cards
+      display: grid
+      grid-template: repeat(5, 500px) / repeat(1, 1fr)
+      gap: 20px
+      &__item
+        flex-direction: column
+        grid-column: 1
+        &::before
+          padding: 4px 9px
+          font-size: 8px
+          line-height: 10px
+      &__stars
+        display: none
+      &__text
+        display: none
+      &__info
+        padding: 30px 21px 25px 32px
+      &__title
+        margin-bottom: 23px
+      &__options
+        margin-bottom: 24px
 
 @media (max-width: 576px)
   .container
@@ -402,3 +439,35 @@
   .bottom
     &__item
       margin: 0 4px
+
+  .packages
+    &-cards
+      display: grid
+      grid-template: repeat(5, 400px) / repeat(1, 1fr)
+      gap: 20px
+      &__item
+        flex-direction: column
+        grid-column: 1
+      &__info
+        padding: 20px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        flex: 1 1 auto
+      &__title
+        margin-bottom: 0
+      &__options
+        margin-bottom: 0
+      &__price
+        flex-direction: column
+        align-items: start
+        &-old
+          margin: 0 10px 0 0
+      &__sell
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+      &__button
+        width: 100%
+      &__image
+        flex: 0 0 40%
