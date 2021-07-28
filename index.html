@@ -24,10 +24,13 @@
           <img src="img/header-logo-vertical.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
         <form action="#" class="form search navbar__search navbar__search--mobile_hidden">
-          <input type="text" class="search__input" placeholder="Search Location" required>
-          <button class="search__button">
-            <img src="img/search.svg" alt="Icon: search">
-          </button>
+          <div class="input-group navbar__input-group">
+            <input type="text" class="search__input" placeholder="Search Location" required>
+            <button class="search__button">
+              <img src="img/search.svg" alt="Icon: search">
+            </button>
+          </div>
+
         </form>
         <a href="#" class="user navbar__user navbar__user--mobile_hidden">
           <img src="img/avatar-nathan.jpg" alt="avatar: Nathan" class="user__avatar">
@@ -163,7 +166,7 @@
               </div>
 
             </div>
-            <button data-toggle="modal" class="booking__other">View Other Options</button>
+            <button data-toggle="modal" class="button booking__other">View Other Options</button>
           </div>
           <div class="booking__map" id="api-maps">
 
@@ -391,7 +394,9 @@
         <span class="newsletter-title__strong">newsletter</span>
       </h2>
       <form action="send.php" method="POST" class="form subscribe newsletter__subscribe" data-aos="zoom-in">
-        <input type="email" class="subscribe__input" placeholder="Your email addres" name="email" required>
+        <div class="input-group newsletter__input-group">
+          <input type="email" class="subscribe__input" placeholder="Your email addres" name="email" required>
+        </div>
         <button class="subscribe__button" type="submit">Send</button>
       </form>
     </div>
@@ -501,7 +506,7 @@
         <div class="card-item" data-aos="fade-right" data-aos-delay="300">
           <img src="img/card-image-2.jpg" alt="Gymkhana club golf course" class="card-item__image">
           <h3 class="card-item__title">Gymkhana club golf <br>course</h3>
-          <button class="button card-item__button">Book Now</button>
+          <button data-toggle="modal" class="button card-item__button">Book Now</button>
         </div>
         <div class="card-item" data-aos="fade-right" data-aos-delay="500">
           <img src="img/card-image-3.jpg" alt="Tamarind falls hiking trip - full day" class="card-item__image">
@@ -625,7 +630,6 @@
               Tel (business hours) : 269 1500 <br>
               Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
               Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
-
             </li>
             <li class="footer__item footer__item--mb33">
               <div class="footer__icon-wrapper"><img src="img/mail.svg" alt="icon: mail" class="footer__icon"></div>
@@ -638,10 +642,12 @@
           <h3 class="footer__title footer__title--m34">Send us a message</h3>
           <form action="send.php" method="POST" class="form footer__form-wrapper">
             <div class="input-group footer__input-group">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required
+                minlength="2">
             </div>
             <div class="input-group footer__input-group">
-              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+              <input type="tel" class="phone-with-ddd input footer__input" placeholder="Phone Number*" name="phone"
+                required minlength="18">
             </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
@@ -668,10 +674,18 @@
       </a>
       <h3 class="modal__title">Booking</h3>
       <form action="send.php" method="POST" class="form modal__form modal__form-wrapper">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-        <input type="tel" class="phone_with_ddd input modal__input modal__input--mobile" placeholder="Phone Number*"
-          name="phone" required minlength="18">
-        <input type="email" class="input modal__input modal__input--mobile" placeholder="Email*" name="email" required>
+        <div class="input-group modal__input-group">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required
+            minlength="2">
+        </div>
+        <div class="input-group modal__input-group">
+          <input type="tel" class="phone-with-ddd input modal__input modal__input--mobile" placeholder="Phone Number*"
+            name="phone" required minlength="18">
+        </div>
+        <div class="input-group modal__input-group">
+          <input type="email" class="input modal__input modal__input--mobile" placeholder="Email*" name="email"
+            required>
+        </div>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
         <span class="modal__info">* Required Fields</span>

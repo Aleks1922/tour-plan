@@ -34,14 +34,10 @@
 .search
   display: flex
   align-items: center
-  overflow: hidden
-  position: relative
-  border-radius: 6px
   height: 40px
   &__input
     padding-left: 23px
     padding-right: 85px
-    height: inherit
     width: 350px
     height: 100%
     border: none
@@ -49,6 +45,7 @@
     line-height: 15px
     background-color: #F5FAFE
     color: $text-color
+    border-radius: 6px
   &__button
     position: absolute
     right: 0
@@ -57,6 +54,7 @@
     width: 65px
     border: none
     background-color: $primary
+    border-radius: 0 6px 6px 0
 
 .user
   display: flex

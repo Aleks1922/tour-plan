@@ -121,7 +121,7 @@ $(document).ready(function () {
     });
   })
 
-  $('.phone_with_ddd').mask('+7 (000) 000-00-00');
+  $('.phone-with-ddd').mask('+7 (000) 000-00-00');
 
   //AOS animation
   AOS.init();
