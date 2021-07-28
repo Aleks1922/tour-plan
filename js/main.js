@@ -101,4 +101,25 @@ $(document).ready(function () {
     }
   });
 
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Your name must contain more than 2 letters"
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "Please enter your phone number"
+        }
+      }
+    });
+  })
+
+  $('.phone_with_ddd').mask('+7 (000) 000-00-00');
+
 });
