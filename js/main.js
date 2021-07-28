@@ -114,12 +114,16 @@ $(document).ready(function () {
           email: "Your email address must be in the format of name@domain.com"
         },
         phone: {
-          required: "Please enter your phone number"
+          required: "Please enter your phone number",
+          minlength: "Your number is too short"
         }
       }
     });
   })
 
   $('.phone_with_ddd').mask('+7 (000) 000-00-00');
+
+  //AOS animation
+  AOS.init();
 
 });

@@ -477,6 +477,13 @@ img {
 
 .invalid {
   color: #EC1F46;
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+
+.input-group {
+  position: relative;
 }
 
 .navbar {

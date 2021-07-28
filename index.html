@@ -13,13 +13,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
   <header class="navbar navbar--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="flip-left" data-aos-delay="500">
           <img src="img/header-logo-vertical.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
         <form action="#" class="form search navbar__search navbar__search--mobile_hidden">
@@ -175,7 +176,7 @@
     <div class="container">
       <h2 class="packages-title">Other Packages</h2>
       <div class="packages-cards">
-        <div class="packages-cards__item packages-cards__item--big">
+        <div class="packages-cards__item packages-cards__item--big" data-aos="fade-right" data-aos-delay="500">
           <div class="packages-cards__wrapper packages-cards__wrapper--big">
             <img src="img/packages-1.jpg" alt="photo: White Palace" class="packages-cards__image">
           </div>
@@ -215,7 +216,7 @@
             </div>
           </div>
         </div>
-        <div class="packages-cards__item packages-cards__item--little">
+        <div class="packages-cards__item packages-cards__item--little" data-aos="fade-left" data-aos-delay="500">
           <div class="packages-cards__wrapper">
             <img src="img/packages-2.jpg" alt="photo: White Palace" class="packages-cards__image">
           </div>
@@ -256,7 +257,7 @@
             </div>
           </div>
         </div>
-        <div class="packages-cards__item packages-cards__item--little">
+        <div class="packages-cards__item packages-cards__item--little" data-aos="fade-right" data-aos-delay="500">
           <div class="packages-cards__wrapper">
             <img src="img/packages-3.jpg" alt="photo: White Palace" class="packages-cards__image">
           </div>
@@ -297,7 +298,7 @@
             </div>
           </div>
         </div>
-        <div class="packages-cards__item packages-cards__item--little">
+        <div class="packages-cards__item packages-cards__item--little" data-aos="fade-up" data-aos-delay="500">
           <div class="packages-cards__wrapper">
             <img src="img/packages-4.jpg" alt="photo: White Palace" class="packages-cards__image">
           </div>
@@ -338,7 +339,7 @@
             </div>
           </div>
         </div>
-        <div class="packages-cards__item packages-cards__item--little">
+        <div class="packages-cards__item packages-cards__item--little" data-aos="fade-left" data-aos-delay="500">
           <div class="packages-cards__wrapper">
             <img src="img/packages-5.jpg" alt="photo: White Palace" class="packages-cards__image">
           </div>
@@ -385,11 +386,11 @@
   <!-- /.packages -->
   <section class="newsletter">
     <div class="newsletter-container">
-      <h2 class="newsletter-title">
+      <h2 class="newsletter-title" data-aos="zoom-in">
         subscribe to our
         <span class="newsletter-title__strong">newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="form subscribe newsletter__subscribe">
+      <form action="send.php" method="POST" class="form subscribe newsletter__subscribe" data-aos="zoom-in">
         <input type="email" class="subscribe__input" placeholder="Your email addres" name="email" required>
         <button class="subscribe__button" type="submit">Send</button>
       </form>
@@ -492,22 +493,22 @@
     <div class="container">
       <h2 class="activities-title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card-item">
+        <div class="card-item" data-aos="fade-right" data-aos-delay="100">
           <img src="img/card-image-1.jpg" alt="The curious corner of chamarel" class="card-item__image">
           <h3 class="card-item__title">The curious corner <br> of chamarel</h3>
           <button data-toggle="modal" class="button card-item__button">Book Now</button>
         </div>
-        <div class="card-item">
+        <div class="card-item" data-aos="fade-right" data-aos-delay="300">
           <img src="img/card-image-2.jpg" alt="Gymkhana club golf course" class="card-item__image">
           <h3 class="card-item__title">Gymkhana club golf <br>course</h3>
           <button class="button card-item__button">Book Now</button>
         </div>
-        <div class="card-item">
+        <div class="card-item" data-aos="fade-right" data-aos-delay="500">
           <img src="img/card-image-3.jpg" alt="Tamarind falls hiking trip - full day" class="card-item__image">
           <h3 class="card-item__title">Tamarind falls hiking <br>trip - full day</h3>
           <button data-toggle="modal" class="button card-item__button">Book Now</button>
         </div>
-        <div class="card-item">
+        <div class="card-item" data-aos="fade-right" data-aos-delay="700">
           <img src="img/card-image-4.jpg" alt="The blue marine discovery quest" class="card-item__image">
           <h3 class="card-item__title">The blue marine discovery<br> quest</h3>
           <button data-toggle="modal" class="button card-item__button">Book Now</button>
@@ -636,10 +637,10 @@
         <div class="footer__send-message">
           <h3 class="footer__title footer__title--m34">Send us a message</h3>
           <form action="send.php" method="POST" class="form footer__form-wrapper">
-            <div class="footer__input-group">
+            <div class="input-group footer__input-group">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
             </div>
-            <div class="footer__input-group">
+            <div class="input-group footer__input-group">
               <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
             </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
@@ -669,7 +670,7 @@
       <form action="send.php" method="POST" class="form modal__form modal__form-wrapper">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
         <input type="tel" class="phone_with_ddd input modal__input modal__input--mobile" placeholder="Phone Number*"
-          name="phone" required>
+          name="phone" required minlength="18">
         <input type="email" class="input modal__input modal__input--mobile" placeholder="Email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
@@ -682,6 +683,7 @@
   <script src="js/jquery.mask.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 
