@@ -27,12 +27,34 @@ $(document).ready(function () {
 
   });
 
-  ymaps.ready(init);
-  function init() {
-    var apiMaps = new ymaps.Map("api-maps", {
-      center: [25.07, 55.13],
-      zoom: 13
-    });
+  // ymaps.ready(init);
+  // function init() {
+  //   var apiMaps = new ymaps.Map("api-maps", {
+  //     center: [25.07, 55.13],
+  //     zoom: 13
+  //   });
+  // }
+
+  let mapContainer = document.getElementById('map_container');
+  let options_map = {
+    once: true,//запуск один раз, и удаление наблюдателя сразу
+    passive: true,
+    capture: true
+  };
+  mapContainer.addEventListener('click', start_lazy_map, options_map);
+  mapContainer.addEventListener('mouseover', start_lazy_map, options_map);
+  mapContainer.addEventListener('touchstart', start_lazy_map, options_map);
+  mapContainer.addEventListener('touchmove', start_lazy_map, options_map);
+
+  let map_loaded = false;
+  function start_lazy_map() {
+    if (!map_loaded) {
+      let map_block = document.getElementById('ymap_lazy');
+      map_loaded = true;
+      map_block.setAttribute('src', map_block.getAttribute('data-src'));
+      map_block.removeAttribute('data_src');
+      console.log('YMAP LOADED');
+    }
   }
 
   let menuButton = document.querySelector('.menu-button');
@@ -121,6 +143,8 @@ $(document).ready(function () {
     });
   })
 
+
+  //mask phone
   $('.phone-with-ddd').mask('+7 (000) 000-00-00');
 
   //AOS animation
