@@ -161,6 +161,35 @@
     &__message
       min-height: 100px
 
+@media (min-width: 992px)
+  button
+    transition: background 0.3s ease
+    &:hover
+      background-color: $primary-hover
+  .navbar-menu__link
+    transition: color 0.3s ease
+    &:hover
+      color: $primary
+  .bottom
+    &__link
+      &:hover
+        text-decoration: underline
+  .call-center
+    &__number
+      &:hover
+        text-decoration: underline
+  .footer
+    &__link
+      transition: color 0.3s ease
+      &:hover
+        text-decoration: underline
+        color: #fff
+  .breadcrumb-list
+    &__link
+      &:hover
+        text-decoration: underline
+        color: $primary
+
 @media (max-width: 767px)
   body
     padding-top: 72px
@@ -366,6 +395,7 @@
         line-height: 38px
     &__subscribe
       max-width: 100%
+      margin-left: 0
   .reviews
     &-slider
       &__item
