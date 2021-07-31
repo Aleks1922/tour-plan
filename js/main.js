@@ -53,7 +53,6 @@ $(document).ready(function () {
       map_loaded = true;
       map_block.setAttribute('src', map_block.getAttribute('data-src'));
       map_block.removeAttribute('data_src');
-      console.log('YMAP LOADED');
     }
   }
 
@@ -112,6 +111,8 @@ $(document).ready(function () {
     document.body.classList.remove('lock');
   }
 
+  $(".modal__overlay").on("click", closeModal);
+
   $(document).keydown('keydown', function (e) {
     // ESCAPE key pressed
     if (e.keyCode === 27) {
@@ -148,6 +149,6 @@ $(document).ready(function () {
   $('.phone-with-ddd').mask('+7 (000) 000-00-00');
 
   //AOS animation
-  AOS.init();
 
+  AOS.init();
 });

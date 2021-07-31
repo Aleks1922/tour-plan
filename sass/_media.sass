@@ -24,6 +24,7 @@
       padding: 30px 0
     &__search
       margin-left: 47px
+      width: 340px
     &-menu
       padding: 22px 0
       justify-content: space-around
@@ -32,7 +33,7 @@
         line-height: 15px
   .search
     &__input
-      width: 340px
+
   .hotel
     &-grid
       flex-direction: column
@@ -115,7 +116,7 @@
       grid-column: 1 / 6
     &__bottom
       grid-row: 5/6
-      grid-column: 1/4
+      grid-column: 1/5
       align-self: center
       justify-self: start
     &__payment
@@ -155,7 +156,7 @@
         flex-wrap: wrap
         justify-content: space-between
         align-items: center
-    &__input
+    &__input-group
       &--mobile
         width: 49%
     &__message
@@ -184,11 +185,20 @@
       &:hover
         text-decoration: underline
         color: #fff
+    &__icon
+      transition: fill 0.3s ease
+      &:hover
+        fill: $primary
   .breadcrumb-list
     &__link
       &:hover
         text-decoration: underline
         color: $primary
+  .hotel
+    &-slider
+      &__button
+        &:hover
+          background-color: transparent
 
 @media (max-width: 767px)
   body
@@ -209,7 +219,7 @@
     &__search
       &--mobile
         &_visible
-          max-width: 243px
+          max-width: 245px
           margin: 0
     &-menu
       flex-direction: column
@@ -289,6 +299,9 @@
   .newsletter-container
     max-width: 576px
     width: 92%
+  .subscribe
+    &__input
+      padding-left: 20px
   .reviews
     padding-bottom: 50px
     &-slider
@@ -357,7 +370,8 @@
 
 @media (max-width: 567px)
   .container
-    max-width: 280px
+    width: 87%
+    max-width: 480px
   .navbar-top
     padding: 26px 0 30px 0px
   .logo
@@ -456,7 +470,7 @@
       grid-column: 1
     &__send-message
       max-width: 540px
-      margin-top: 13px
+      margin-top: 10px
       grid-column: 1
       grid-row: 7
     &__form-wrapper
@@ -534,6 +548,9 @@
       padding: 12px 22px
     &__message
       min-height: 80px
+    &__input-group
+      &--mobile
+        width: 100%
     &__input
       width: 100%
     &__button

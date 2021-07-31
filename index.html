@@ -50,33 +50,35 @@
           </a>
         </li>
         <li class="navbar-menu__item navbar-menu__item--mobile_visible">
-          <form action="#" class="search navbar__search navbar__search--mobile_visible">
-            <input type="text" class="search__input" placeholder="Search Location">
-            <button class="search__button">
-              <img src="img/search.svg" alt="Icon: search">
-            </button>
+          <form action="#" class="form search navbar__search navbar__search--mobile_visible">
+            <div class="input-group navbar__input-group">
+              <input type="text" class="input search__input" placeholder="Search Location" required>
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon: search">
+              </button>
+            </div>
           </form>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">All Deals</a>
+          <a class="navbar-menu__link" href="#">All Deals</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Hotels</a>
+          <a class="navbar-menu__link" href="#">Hotels</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Activities</a>
+          <a class="navbar-menu__link" href="#">Activities</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Hotel Day Packages</a>
+          <a class="navbar-menu__link" href="#">Hotel Day Packages</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Restaurants</a>
+          <a class="navbar-menu__link" href="#">Restaurants</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Events</a>
+          <a class="navbar-menu__link" href="#">Events</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Rodrigues</a>
+          <a class="navbar-menu__link" href="#">Rodrigues</a>
         </li>
       </ul>
     </nav>
@@ -166,8 +168,9 @@
             <button data-toggle="modal" class="button booking__other">View Other Options</button>
           </div>
           <div class="map booking__map" id="map_container">
-            <script id="ymap_lazy"
-              data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A21461b8a0722d8d95d7b7790e7aacdea9768614e89bff99378253d1d8cee2b56&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            <iframe id="ymap_lazy"
+              data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22288.96359191944!2d55.144807016620014!3d25.096740002202345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcc389002704c0d42!2sHilton%20Dubai%20Palm%20Jumeirah!5e0!3m2!1sru!2sru!4v1627725458515!5m2!1sru!2sru"
+              width="100%" height="400" style="border:0;" allowfullscreen=""></iframe>
           </div>
         </div>
       </div>
@@ -214,7 +217,7 @@
                 <span class="packages-cards__price-old">$ 10,500</span>
                 <span class="packages-cards__price-new">$ 8,500</span>
               </div>
-              <button data-toggle="modal" class="packages-cards__button">Book Now</button>
+              <button data-toggle="modal" class="packages-cards__button">Купить прямо сейчас</button>
             </div>
           </div>
         </div>
@@ -585,13 +588,19 @@
           <h3 class="footer__title footer__title--m0">Social Network</h3>
           <div class="footer__social-links">
             <a href="https://ru-ru.facebook.com/" class="footer__link" target="_blank" rel="nofollow noopener">
-              <img src="img/fb.svg" alt="icon: facebook">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
             </a>
             <a href="https://www.youtube.com/" class="footer__link" target="_blank" rel="nofollow noopener">
-              <img src="img/yt.svg" alt="icon: youtube">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#yt"></use>
+              </svg>
             </a>
             <a href="https://www.instagram.com/" class="footer__link" target="_blank" rel="nofollow noopener">
-              <img src="img/inst.svg" alt="icon: instargam">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#inst"></use>
+              </svg>
             </a>
           </div>
         </div>
@@ -627,10 +636,10 @@
               <div class="footer__icon-wrapper"><img src="img/phone-call.svg" alt="icon: phone" class="footer__icon">
               </div>
               <div class="footer__number">
-                Tel (business hours) : <a href="tel:+269 150" class="footer__link footer__link--tel">269 150</a> <br>
-                Tel (hotline) Monday - Saturday: <a href="tel:+52-56-61-38"
+                Tel (business hours) : <a href="tel:+269150" class="footer__link footer__link--tel">269 150</a> <br>
+                Tel (hotline) Monday - Saturday: <a href="tel:+52566138"
                   class="footer__link footer__link--tel">52-56-61-38</a> (08:00 am – 20:00 pm) <br>
-                Tel (hotline) Sunday: <a href="tel:+52-56-61-38" class="footer__link footer__link--tel">52-56-61-38</a>
+                Tel (hotline) Sunday: <a href="tel:+52566138" class="footer__link footer__link--tel">52-56-61-38</a>
                 (08:00 am – 14:00
                 pm)
               </div>
@@ -682,13 +691,12 @@
           <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required
             minlength="2">
         </div>
-        <div class="input-group modal__input-group">
-          <input type="tel" class="phone-with-ddd input modal__input modal__input--mobile" placeholder="Phone Number*"
-            name="phone" required minlength="18">
+        <div class="input-group modal__input-group modal__input-group--mobile">
+          <input type="tel" class="phone-with-ddd input modal__input" placeholder="Phone Number*" name="phone" required
+            minlength="18">
         </div>
-        <div class="input-group modal__input-group">
-          <input type="email" class="input modal__input modal__input--mobile" placeholder="Email*" name="email"
-            required>
+        <div class="input-group modal__input-group modal__input-group--mobile">
+          <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         </div>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>

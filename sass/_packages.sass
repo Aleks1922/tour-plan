@@ -1,6 +1,5 @@
 .packages
   margin-bottom: 70px
-  margin-top: 70px
   padding-top: 40px
   &-title
     font-weight: bold
@@ -72,14 +71,15 @@
     &__text
       font-weight: normal
       font-size: 14px
-      line-height: 160.6%
+      line-height: 158%
       margin-bottom: 34px
-      max-height: 160px
+      height: 165px
       overflow: auto
       &--little
         display: none
     &__options
       margin-bottom: 37px
+      padding-left: 3px
       display: flex
       flex-direction: column
       justify-content: space-between
@@ -90,10 +90,11 @@
         line-height: 15px
       &--little
         margin-bottom: 24px
+        padding-left: 0
     &__icon
       width: 14px
       height: 14px
-      margin-right: 14px
+      margin-right: 12px
     &__price
       display: flex
       align-items: flex-end
@@ -109,6 +110,9 @@
       font-weight: bold
       font-size: 24px
       line-height: 30px
+    &__sell
+      margin-right: 10px
+      flex: 1 0 100px
     &__button
       padding: 11px 27px 10px 26px
       color: #fff
@@ -117,3 +121,4 @@
       line-height: 19px
       background-color: $primary
       border-radius: 4px
+      max-width: 180px

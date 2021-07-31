@@ -10,15 +10,13 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@300;400;600;700;800&display=swap">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
   <header class="navbar navbar--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo" data-aos="flip-left" data-aos-delay="500">
+        <a href="index.html" class="logo" data-aos="flip-left" data-aos-delay="500">
           <img src="img/header-logo-vertical.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
         <form action="#" class="form search navbar__search navbar__search--mobile_hidden">
@@ -58,25 +56,25 @@
           </form>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">All Deals</a>
+          <a class="navbar-menu__link" href="#">All Deals</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Hotels</a>
+          <a class="navbar-menu__link" href="#">Hotels</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Activities</a>
+          <a class="navbar-menu__link" href="#">Activities</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Hotel Day Packages</a>
+          <a class="navbar-menu__link" href="#">Hotel Day Packages</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Restaurants</a>
+          <a class="navbar-menu__link" href="#">Restaurants</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Events</a>
+          <a class="navbar-menu__link" href="#">Events</a>
         </li>
         <li class="navbar-menu__item">
-          <a class="navbar-menu__link" href="">Rodrigues</a>
+          <a class="navbar-menu__link" href="#">Rodrigues</a>
         </li>
       </ul>
     </nav>
@@ -110,9 +108,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <div class="footer__logo">
+        <a href="index.html" class="footer__logo">
           <img src="img/footer-logo.svg" alt="logo: best tour plan">
-        </div>
+        </a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
@@ -171,13 +169,19 @@
           <h3 class="footer__title footer__title--m0">Social Network</h3>
           <div class="footer__social-links">
             <a href="https://ru-ru.facebook.com/" class="footer__link" target="_blank" rel="nofollow noopener">
-              <img src="img/fb.svg" alt="icon: facebook">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
             </a>
             <a href="https://www.youtube.com/" class="footer__link" target="_blank" rel="nofollow noopener">
-              <img src="img/yt.svg" alt="icon: youtube">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#yt"></use>
+              </svg>
             </a>
             <a href="https://www.instagram.com/" class="footer__link" target="_blank" rel="nofollow noopener">
-              <img src="img/inst.svg" alt="icon: instargam">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#inst"></use>
+              </svg>
             </a>
           </div>
         </div>
@@ -259,9 +263,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/tnx.js"></script>
 </body>
 
 </html>
