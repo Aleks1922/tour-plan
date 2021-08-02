@@ -24,7 +24,7 @@ $(document).ready(function () {
       nextEl: '.reviews-slider__button--next',
       prevEl: '.reviews-slider__button--prev',
     },
-
+    autoHeight: true
   });
 
   // ymaps.ready(init);
@@ -150,5 +150,11 @@ $(document).ready(function () {
 
   //AOS animation
 
-  AOS.init();
+  AOS.init({
+    disable: function () {
+      var maxWidth = 992;
+      return window.innerWidth < maxWidth;
+    }
+  });
+
 });
